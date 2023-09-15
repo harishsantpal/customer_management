@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SendSMS">
+
+    <ImageView
+        android:id="@+id/ivNoInternetSendSMS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/no_internet_3"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        android:textColor="@color/white"
+        android:background="@drawable/button_back"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recViewSmsSemd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@id/btnSendSMS"
+        android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

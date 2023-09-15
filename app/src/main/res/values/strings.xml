@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CustomerManager</string>
+    <string-array name="numberOfMonths">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="hint_mess">Select Monthly Package</string>
+</resources>

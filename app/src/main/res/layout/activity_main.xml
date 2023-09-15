@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivNoInternetMainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:srcCompat="@drawable/no_internet_3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAddCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp">
+
+                <TextView
+                    android:id="@+id/tvAddCustomer"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Add Customer"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSendSMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/cvAddCustomer"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp">
+
+                <TextView
+                    android:id="@+id/tvSendSMS"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Send SMS"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvViewCustomers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cvSendSMS"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp">
+
+                <TextView
+                    android:id="@+id/tvViewCustomers"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="View Customer"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvViewCustomersFailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cvSendSMS"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/cvViewCustomers"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp">
+
+                <TextView
+                    android:id="@+id/tvViewCustomersFailed2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Un-Send\nSMS"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cvViewCustomers"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/button_back"
+                android:backgroundTint="@color/myBlue"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
